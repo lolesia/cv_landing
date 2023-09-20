@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static.css"> <!-- Путь к вашему CSS-файлу -->
+    <title>Junior Python Developer</title>
+</head>
+<body>
+    <div class="section">
+        <h1>{ general_data.first_name } { general_data.last_name }</h1>
+        <h1>{ general_data.specialization}</h1>
+    </div>
+    <div class="section">
+        <h1>PROFILE</h1>
+        <pre>{ general_data.profile }</pre>
+    </div>
+    <div class="section">
+        <h1>WORK EXPERIENCE</h1>
+        <ul type="circle">
+            {% for exp in experience %}
+            <li>{exp.company_name}</li>
+            <li>{exp.position}</li>
+            <li>{exp.start_date}</li>
+            <li>{exp.end_date}</li>
+            <li>{exp.description}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section">
+        <h1>SKILLS</h1>
+        <ul type="circle">
+            {% for skill in skills %}
+            <li>{skills.skill}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section">
+        <h1>PERSONAL QUALITIES</h1>
+        <ul type="circle">
+            {% for quality in qualities %}
+            <li>{qualities.quality}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section">
+        <h1>CONTACTS</h1>
+        <ul type="circle">
+            {% for contact in contacts %}
+            <li>{contacts.contact}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>
+

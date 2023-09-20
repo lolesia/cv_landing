@@ -1,0 +1,41 @@
+<body>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #ff7f50; /* Оранжевый цвет */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+/* Стили для контактов */
+.contact-info {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Стили для списка навыков */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #ffcc99; /* Пастельно-оранжевый цвет */
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+</body>
